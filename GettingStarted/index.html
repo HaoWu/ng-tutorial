@@ -5,6 +5,8 @@
     <title>Hello Angular</title>
 </head>
 <body>
-    Hello {{'Angular!'}}
+    Your name: <input type="text" ng-model="yourName" placeholder="Angular">
+    <hr/>
+    Hello {{ yourName || 'Angular'}} !
 </body>
 </html>
